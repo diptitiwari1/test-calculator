@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://diptitiwari1.github.io/test-calculator",
-  "source": "src/index.html",
   "scripts": {
-    "start": "parcel --no-source-maps",
-    "build": "rimraf dist && parcel build src/index.html --no-source-maps",
+    "start": "parcel src/index.html --no-source-maps",
+    "build": "rimraf dist && parcel build src/index.html --public-url ./ --no-source-maps",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
